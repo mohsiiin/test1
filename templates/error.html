@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Error</title>
+    <style>
+        body{
+            background-image: url("{% static 's2.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .box{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width:420px;
+            background-color: rgba(39, 37, 37, 0.5);
+            padding:50px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 15px 20px rgba(27, 26, 26, 0.644);
+
+        }
+        .box:hover{
+            width:450px;
+            background-color: rgb(27, 26, 26,0.7);
+            padding:60px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(27, 26, 26, 0.767);
+        }
+        h2{
+            color:bisque;
+            font-family: cursive;
+            font-weight:bolder;
+            font-size: 35px;
+        }
+        h3{
+            color:rgb(253, 233, 224);
+            font-family: cursive;
+            font-weight:bolder;
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+            background-color:brown;
+            border-radius:25px;
+            color:white;
+            font-family:cursive;
+            padding:15px 20px 15px 20px;
+        }
+        a:hover{
+            text-decoration: none;
+            background-color:rgb(163, 20, 20);
+            border-radius:25px;
+            color:white;
+            font-family:cursive;
+            padding:17px 22px 17px 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="{% static 'stop.png' %}" width="220px" hieght="210px">
+        <h2>Hey, Guest User ! </h2>
+        <h3>You don't have the permission to access this page.</h3>
+        <h3>Please Login First !</h3>
+        <a href="../accounts/login">Login Here</a>
+    </div>
+</body>
+</html>

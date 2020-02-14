@@ -1,0 +1,119 @@
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'alig/aligarhcss.css' %}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{city.name}}</title>
+        <style>
+                h1{
+                    background-image:url("{{city.headimg.url}}");
+                    background-attachment:fixed;
+                    background-size:contain;
+                    background-repeat:no-repeat;
+                    text-align:center;
+                    padding-top:.6em;
+                    padding-bottom:.5em;
+                    font-size:5em;
+                    color:rgba(255, 255, 255, 0.986);
+                    font-family: cursive;
+                    min-height:1.2em;
+                    width:100%;
+                    position: relative;
+                    text-shadow: 3px 3px black;
+                    margin-bottom:0px;
+                    margin-top:0px;
+                }
+                body{
+                    margin:auto;
+                    background-image: url("{% static 'review/abstract.jpg' %}");
+                    background-size:cover;
+                }
+        </style>
+    </head>
+
+    <body>
+
+        <h1> 
+              {{city.name}}
+        </h1>
+        <div class="tab">
+            <button class="tablinks" id="btn1">
+            Restaurants 
+            </button>
+            <button class="tablinks" id="btn2">
+            Street Foods 
+            </button>
+            
+            <button class="backbtn"  ><a href="../welcome"><p class="abc">Back</p></a></button>
+                
+        </div>
+        <div id="Restaurants" class="tabcontent1">
+            <p>
+                <ul>
+                    {% for rest in rests %}
+                    <li>
+                        <a href="{{rest.link}}">{{rest.name}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </p>         
+    </div>
+    <div id="Street Foods" class="tabcontent2">
+        <p>
+            <ul>
+                <li>
+                    <a href="#">Chicken Biryani</a>
+                </li>
+                <li>
+                    <a href="#">Sharwarma</a>
+                </li>
+                <li>
+                    <a href="#">Aghani</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+        <p class="intro" style="font-size:30px; font-weight:bolder; background-color:transparent;">
+        {% if user.is_authenticated %}
+        Hey,{{user.first_name}}... {{city.desc}}
+        {% endif %}
+        
+        </p>
+        
+
+        
+        <div class="photos">
+            <ul>
+                <li>
+                    <img src= "{{city.img1.url}}" width="290px" height="230px">
+
+                </li>
+                <li>
+                    <img src="{{city.img2.url}}" width="290px" height="230px" >
+                </li>
+                <li>
+                    <img src="{{city.img3.url}}" width="290px" height="230px" >
+                </li>
+                <li>
+                    <img src="{{city.img4.url}}" width="290px" height="230px">
+                </li>
+                
+            </ul>  
+        </div>
+        
+        <div class="footer">
+            <ul>
+                <li><a href="#"><img src="{% static 'alig/face.png' %}" width="50px" height="54px"></a></li>
+                <li><a href="#"><img src="{% static 'alig/instagram-square.png' %}" width="45px" height="50px" style="border-radius:10px;"></a></li>
+                <li><a href="#"><img src="{% static 'alig/twitter_PNG33.png' %}" width="50px" height="54px"></a></li>
+            </ul>
+        </div>
+        
+        <script src="{% static 'alig/main.js' %}"></script>
+        
+    </body>
+    </html>
+    

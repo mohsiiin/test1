@@ -1,0 +1,202 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color:rgb(233, 203, 146);
+    overflow:hidden;
+       
+}
+h1{
+    background-image:url("collage.jpg");
+    background-attachment:fixed;
+    background-size:contain;
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:.6em;
+    padding-bottom:.5em;
+    font-size:5em;
+    color:rgba(255, 255, 255, 0.986);
+    font-family: cursive;
+    background-color:rgba(253, 123, 145, 0.904));
+    min-height:1.2em;
+    width:100%;
+    position: relative;
+    text-shadow: 3px 3px black;
+    margin-bottom:0px;
+    margin-top:0px;
+    
+    
+}
+ 
+.intro{
+    margin-left:0px;
+    margin-top:61px;
+    padding-left:2.7em;
+    padding-top:7px;
+    padding-bottom:7px;
+    font-family:cursive ;
+    font-size:22px;
+    min-height:35px;
+    justify-content: center;
+    color:rgb(56, 39, 2));
+    background-color:rgb(233, 203, 146);
+    width:80%;
+}
+
+.tab{
+    background-color:rgb(99, 34, 4);
+    z-index:1;
+    padding-left:4em;
+    padding-top:6px;
+    overflow:hidden;
+    border:1px solid  rgb(139, 62, 26);
+    justify-content: center; 
+    margin-top:0px;
+    margin-bottom: 0px;
+    position:absolute;
+    width:100%;
+    top:27%;
+}
+.tab button{
+    background-color:rgb(165, 97, 42);
+    margin-left:7em;
+    margin-bottom:3.2px;
+    float:center;
+    cursor:pointer;
+    font-size:18px;
+    color:honeydew;
+    font-weight: bold;
+    padding: 14px 16px;
+    transition:0.1s;
+    align-items:center;
+    border-radius:20px;
+    border:none;
+    outline:none;
+    
+}
+
+.tab button:hover{
+    background-color:rgba(165, 97, 42, 0.562);
+}
+
+.tab button.active{
+    background-color:#ccc;
+}
+
+.tabcontent1{
+    background-color: rgba(47, 79, 79, 0.096);
+    display:none;
+    margin-left:12em;
+    margin-top:2.59em ;
+    padding:6px 12px;
+    border:1px solid #ccc;
+    border-top:none;
+    color:rgb(68, 66, 66);
+    z-index: 1;
+}
+.tabcontent1 a{
+    color:rgb(68, 66, 66)
+}
+.tabcontent1 li{
+    text-decoration:none;
+    list-style:none;
+    margin:0;
+}
+
+.tabcontent1 a:hover{
+    color:white;
+}
+ 
+
+.tabcontent2{
+    background-color:  rgba(189, 115, 55, 0.575);
+    display:none;
+    margin-left:28.9em;
+    margin-top:2.59em;
+    padding:6px 12px;
+    border:1px solid rgba(185, 184, 184, 0.171);
+    border-top:none;
+    color:white;
+    z-index: 1;
+}
+.tabcontent2 a{
+    color:rgb(68, 66, 66)
+}
+.tabcontent2 li{
+    text-decoration:none;
+    list-style:none;
+    margin:0;
+}
+
+.tabcontent2 a:hover{
+    color:white;
+}
+
+.tabcontentnew{
+    display:block;
+    padding:6px 12px;
+    background-color: rgba(218, 122, 44, 0.925);
+    border:1px solid rgba(218, 122, 44, 0.658);
+    border-top:none;
+    width:10%;
+    z-index:1;
+    position:fixed;
+    line-height:2em;
+}
+
+.photos{
+    box-sizing: border-box;
+    margin-top:1.2em;
+    z-index: -1;
+}
+
+.photos li{
+    display:inline;
+    list-style:none;
+    margin-left: 34px;
+          
+}
+a{  
+    font-size:20px;
+    padding-top:10px;
+    color:white;
+    text-decoration: none;
+}
+ 
+.backbtn{
+    float:right;
+    border-radius:20px;
+    margin-right:130px;
+    border:none;
+    outline:none;
+}
+.footer{
+    height:300px;
+    background-color:rgb(214, 177, 107);
+}
+.footer ul{
+    padding-left:36.2em;
+    padding-top:12px;
+    padding-bottom:30px;
+    
+}
+.footer li{
+    display:inline;
+    list-style:none;
+    padding-right:1em;
+    
+    float:center;
+}
+.abc{
+    padding: 0px 15px 0px 15px;
+}
+ 
+
+
+
+
+
+
+
+

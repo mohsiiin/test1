@@ -44,6 +44,7 @@ pylint-plugin-utils==0.6
 pyrsistent==0.15.4
 python-dateutil==2.8.0
 pytz==2019.3
+pywin32==225
 pywinpty==0.5.5
 pyzmq==18.1.0
 Send2Trash==1.5.0
@@ -58,5 +59,6 @@ virtualenv==16.7.9
 virtualenvwrapper-win==1.2.5
 wcwidth==0.1.7
 webencodings==0.5.1
+whitenoise==5.0.1
 wrapt==1.11.2
 zipp==0.6.0
